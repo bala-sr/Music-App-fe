@@ -27,7 +27,7 @@ export default function Dashboard({ code }) {
     if (!playingTrack) return
 
     axios
-      .get("http://localhost:4000/lyrics", {
+      .get("https://music-appl-be.herokuapp.com/lyrics", {
         params: {
           track: playingTrack.title,
           artist: playingTrack.artist,
